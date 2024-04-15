@@ -16,16 +16,16 @@ function calculateResult() {
 
   var invalidSubjects = [];
   if (!validateMarks(manualMarks)) {
-    invalidSubjects.push("Advance java");
+    invalidSubjects.push("Physics");
   }
   if (!validateMarks(javaMarks)) {
-    invalidSubjects.push("Java");
+    invalidSubjects.push("Chemistry");
   }
   if (!validateMarks(webTechMarks)) {
-    invalidSubjects.push("Web Technology");
+    invalidSubjects.push("Math");
   }
   if (!validateMarks(sqlMarks)) {
-    invalidSubjects.push("SQL");
+    invalidSubjects.push("English");
   }
   if (invalidSubjects.length > 0) {
     var message = "Invalid marks! The following subject(s) have invalid marks: " + invalidSubjects.join(", ");
@@ -35,16 +35,16 @@ function calculateResult() {
 
   var failedSubjects = [];
   if (manualMarks < 35) {
-    failedSubjects.push("Advance java");
+    failedSubjects.push("Physics");
   }
   if (javaMarks < 35) {
-    failedSubjects.push("Java");
+    failedSubjects.push("Chemistry");
   }
   if (webTechMarks < 35) {
-    failedSubjects.push("Web Technology");
+    failedSubjects.push("Math");
   }
   if (sqlMarks < 35) {
-    failedSubjects.push("SQL");
+    failedSubjects.push("English");
   }
 
   if (failedSubjects.length > 0) {
